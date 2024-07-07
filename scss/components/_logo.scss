@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+.logo {
+  display: inline-block;
+
+  &[data-type='header'] {
+    max-width: clamp(6.5rem, 15vw, 12.5rem);
+  }
+
+  &[data-type='footer'] {
+    max-width: 10.375rem;
+
+    @include respond(md) {
+      max-width: 9.5rem;
+    }
+  }
+}

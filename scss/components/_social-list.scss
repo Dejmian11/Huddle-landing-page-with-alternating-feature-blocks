@@ -1,0 +1,26 @@
+@use '../abstracts/' as *;
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 0.6875rem;
+
+  & a {
+    display: inline-flex;
+    padding: var(--size-200);
+    border: 1px solid currentColor;
+    border-radius: 100vmax;
+    color: hsl(var(--clr-footer));
+    transition: var(--transition);
+
+    &:is(:hover, :focus) {
+      color: hsl(var(--clr-accent-400-hsl));
+    }
+  }
+
+  &__icon {
+    height: 0.9375rem;
+    aspect-ratio: 1;
+    fill: currentColor;
+  }
+}

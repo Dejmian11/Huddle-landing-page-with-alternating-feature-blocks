@@ -1,0 +1,13 @@
+@use '../abstracts/' as *;
+
+.clr-primary-300 {
+  color: hsl(var(--clr-primary-300-hsl));
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}

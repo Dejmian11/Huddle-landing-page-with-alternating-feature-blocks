@@ -1,0 +1,82 @@
+@use '../abstracts/' as *;
+
+.feature {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  gap: 3.375rem;
+  min-height: 30.5rem;
+  padding: var(--size-600) var(--size-700);
+  border-radius: var(--size-400);
+  box-shadow: 0 0 0.875rem 0 hsl(var(--clr-neutral-100-hsl), 7%);
+
+  @include respond(md) {
+    padding: 4rem;
+  }
+
+  @include respond(lg) {
+    grid-auto-flow: column;
+    min-height: 27.5rem;
+    height: 27.5rem;
+    padding-inline: 7.5rem 1.875rem;
+  }
+
+  &:last-child .feature__description {
+    margin-inline: 0.25rem;
+
+    @include respond(md) {
+      margin-inline: 0;
+    }
+  }
+
+  &:nth-child(2n + 1) .feature__content {
+    @include respond(lg) {
+      grid-column: 1;
+    }
+  }
+
+  &--grow {
+    @include respond(xl) {
+      gap: 11.5625rem;
+      padding-right: var(--size-600);
+    }
+
+    & > img {
+      max-width: 14.75rem;
+
+      @include respond(lg) {
+        max-width: 25.375rem;
+      }
+    }
+  }
+
+  &--conversations {
+    @include respond(xl) {
+      gap: 10.3125rem;
+    }
+
+    & > img {
+      max-width: 15.125rem;
+
+      @include respond(lg) {
+        max-width: 26.0625rem;
+      }
+    }
+  }
+
+  &--users {
+    @include respond(xl) {
+      gap: 11rem;
+      padding-right: 1.5625rem;
+    }
+
+    & > img {
+      max-width: 15.25rem;
+
+      @include respond(lg) {
+        max-width: 26.25rem;
+      }
+    }
+  }
+}

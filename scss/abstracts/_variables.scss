@@ -1,0 +1,70 @@
+@use 'media-queries' as *;
+
+:root {
+  // Colors
+  --clr-primary-300-hsl: 192, 100%, 9%;
+  --clr-primary-700-hsl: 208, 11%, 55%;
+  --clr-primary-900-hsl: 193, 100%, 96%;
+
+  --clr-accent-400-hsl: 322, 100%, 66%;
+  --clr-accent-600-hsl: 321, 100%, 80%;
+
+  --clr-neutral-100-hsl: 0, 0%, 0%;
+  --clr-neutral-900-hsl: 0, 0%, 100%;
+
+  --clr-heading: hsl(var(--clr-primary-300-hsl));
+  --clr-body: hsl(var(--clr-primary-700-hsl));
+  --clr-footer: hsl(var(--clr-neutral-900-hsl));
+
+  // Font families
+  --ff-primary: 'Poppins', sans-serif;
+  --ff-accent: 'Open Sans', sans-serif;
+
+  --ff-heading: var(--ff-primary);
+  --ff-body: var(--ff-accent);
+  --ff-button: var(--ff-accent);
+
+  // Font weights
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  // Font sizes
+  --fs-s: 0.625rem; // 10
+  --fs-100: 0.69rem; // 11
+  --fs-200: 0.75rem; // 12
+  --fs-300: 0.875rem; // 14
+  --fs-400: 1rem; // 16
+  --fs-500: 1.125rem; // 18
+  --fs-600: 1.25rem; // 20
+  --fs-700: 1.5rem; // 24
+  --fs-800: 1.75rem; // 28
+  --fs-900: 2rem; // 32
+  --fs-lg: 2.5rem; // 40
+
+  --fs-footer: var(--fs-300);
+  --fs-body: var(--fs-300);
+  --fs-heading-secondary: var(--fs-600);
+  --fs-heading-primary: var(--fs-700);
+
+  @include respond(md) {
+    --fs-body: var(--fs-500);
+    --fs-heading-secondary: var(--fs-800);
+    --fs-heading-primary: var(--fs-lg);
+  }
+
+  // Sizes
+  --size-unit: 1rem;
+  --size-100: calc(var(--size-unit) * 0.25); // 4
+  --size-200: calc(var(--size-unit) * 0.5); // 8
+  --size-300: calc(var(--size-unit) * 0.75); // 12
+  --size-400: calc(var(--size-unit) * 1); // 16
+  --size-500: calc(var(--size-unit) * 1.5); // 24
+  --size-600: calc(var(--size-unit) * 2); // 32
+  --size-700: calc(var(--size-unit) * 2.5); // 40
+  --size-800: calc(var(--size-unit) * 3); // 48
+  --size-900: calc(var(--size-unit) * 3.5); // 56
+
+  // Transition
+  --transition: all 0.25s;
+}

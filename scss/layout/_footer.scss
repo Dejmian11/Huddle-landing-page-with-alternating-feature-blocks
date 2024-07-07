@@ -1,0 +1,80 @@
+@use '../abstracts/' as *;
+
+.footer {
+  padding: 8.75rem var(--size-100) 2.875rem;
+  background-color: hsl(var(--clr-primary-300-hsl));
+  color: var(--clr-footer);
+  font-size: var(--fs-footer);
+
+  @include respond(lg) {
+    padding-block: 9rem 4rem;
+  }
+
+  &__container {
+    --content-spacing: var(--size-500);
+
+    @include respond(xl) {
+      --content-spacing: var(--size-600) 8.125rem;
+
+      padding-inline: 1.1875rem;
+    }
+
+    @include respond(xl) {
+      grid-template-areas:
+        'logo . .'
+        'contact nav social'
+        'contact . copyright';
+      justify-items: start;
+    }
+  }
+
+  .logo {
+    @include respond(xl) {
+      grid-area: logo;
+    }
+  }
+
+  .contact-info {
+    padding-bottom: var(--size-400);
+
+    @include respond(xl) {
+      grid-area: contact;
+    }
+  }
+
+  .footer-nav {
+    @include respond(xl) {
+      grid-area: nav;
+      padding-right: 2.8125rem;
+    }
+
+    &__list {
+      gap: var(--size-400);
+
+      @include respond(xl) {
+        grid-template-rows: repeat(3, 1fr);
+        grid-auto-flow: column;
+        gap: var(--size-300) 8.9375rem;
+      }
+    }
+
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .social-list {
+    @include respond(xl) {
+      grid-area: social;
+    }
+  }
+
+  &__copyright {
+    font-size: var(--fs-200);
+    text-align: center;
+
+    @include respond(xl) {
+      grid-area: copyright;
+    }
+  }
+}

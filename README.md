@@ -16,12 +16,12 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://github.com/Dejmian11/Huddle-landing-page-with-alternating-feature-blocks/blob/main/assets/screenshot/Screenshot%20-%20Frontend%20Mentor%20Huddle%20landing%20page%20with%20alternating%20feature%20blocks.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/huddle-landing-page-with-alternating-feature-blocks-with-scss-dN-lab0NcG)
+- Live Site URL: [Live](https://tangerine-fox-a5d3ca.netlify.app/)
 
 ## My process
 
